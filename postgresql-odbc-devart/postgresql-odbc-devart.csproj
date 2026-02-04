@@ -1,0 +1,118 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net481</TargetFramework>
+    <RootNamespace>postgresql_odbc_devart</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <StartupObject>YourNamespace.ImpalaOdbc</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+
+    <!-- =================== -->
+    <!-- NPGSQL DEPENDENCIES -->
+    <!-- =================== -->
+
+    <Reference Include="Npgsql"><!-- 8.0.8 -->
+      <HintPath>lib\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces"><!-- 8.0.0 -->
+      <HintPath>lib\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode"><!-- 1.0.0 ~ 1.1.1 -->
+      <HintPath>lib\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions"><!-- 8.0.0 -->
+      <HintPath>lib\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions"><!-- 8.0.0 -->
+      <HintPath>lib\Microsoft.Extensions.DependencyInjection.Abstractions</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers"><!-- 4.5.1 -->
+      <HintPath>lib\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable"><!-- 8.0.0 -->
+      <HintPath>lib\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory"><!-- 4.5.5 -->
+      <HintPath>lib\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe"><!-- 6.0.0 -->
+      <HintPath>lib\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json"><!-- 8.0.5 -->
+      <HintPath>lib\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels"><!-- 8.0.0 -->
+      <HintPath>lib\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions"><!-- 4.5.4 -->
+      <HintPath>lib\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web"><!-- 8.0.0 -->
+      <HintPath>lib\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors"><!-- 4.5.0 -->
+      <HintPath>lib\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+
+    <!-- =================== -->
+    <!-- DEVART DEPENDENCIES -->
+    <!-- =================== -->
+
+    <Reference Include="Devart.Data"><!-- 5.3.290 -->
+      <HintPath>lib\Devart.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.Universal"><!-- 5.3.290 -->
+      <HintPath>lib\Devart.Data.Universal.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.Universal.Odbc"><!-- 5.3.290 -->
+      <HintPath>lib\Devart.Data.Universal.Odbc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry"><!-- 4.5.0 -->
+      <HintPath>lib\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.PerformanceCounter"><!-- 4.5.0 -->
+      <HintPath>lib\System.Diagnostics.PerformanceCounter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit"><!-- 4.0.0 -->
+      <HintPath>lib\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration"><!-- 4.0.0 -->
+      <HintPath>lib\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource"><!-- 8.0.0 -->
+      <HintPath>lib\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+
+    <!-- ==================== -->
+    <!-- LOG4NET DEPENDENCIES -->
+    <!-- ==================== -->
+
+    <Reference Include="log4net"><!-- 3.2.0 -->
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager"><!-- 4.5.0 -->
+      <HintPath>lib\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
