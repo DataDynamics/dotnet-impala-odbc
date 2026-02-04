@@ -27,6 +27,10 @@
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml" />
 
+    <Reference Include="Newtonsoft.Json"><!-- 13.0.4 -->
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+
     <!-- =================== -->
     <!-- NPGSQL DEPENDENCIES -->
     <!-- =================== -->
