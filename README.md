@@ -9,7 +9,7 @@
 
 * Impala ODBC 패키지 설치
 
-## DLL 수정 설정
+## Reference 수동 설정
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
