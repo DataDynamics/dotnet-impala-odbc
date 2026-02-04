@@ -11,7 +11,7 @@ internal class Program
     
     
     // 연결 문자열 설정
-    private const string ConnectionString = "Host=10.0.1.60;Username=scm;Password=dd98969321;Database=scm";
+    private const string ConnectionString = "Host=10.0.1.60;Username=scm;Password=dd********;Database=scm";
 
     private static async Task Main(string[] args)
     {
