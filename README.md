@@ -3,6 +3,7 @@
 * Devart.Data.Universal.Odbc와 Impala ODBC를 이용하여 Impala에서 데이터를 조회하는 예제
 * log4net 예제
 * Npgsql을 이용하여 PostgreSQL 데이터를 조회하는 예제
+* JSON 직렬화 예제
 
 ## Requirement
 
@@ -20,7 +21,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>10.0</LangVersion>
-    <StartupObject>YourNamespace.ImpalaOdbc</StartupObject>
+    <!-- Start Class -->
+    <StartupObject>YourNamespace.Json</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -39,6 +41,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Xml" />
+
+    <Reference Include="Newtonsoft.Json"><!-- 13.0.4 -->
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
 
     <!-- =================== -->
     <!-- NPGSQL DEPENDENCIES -->
