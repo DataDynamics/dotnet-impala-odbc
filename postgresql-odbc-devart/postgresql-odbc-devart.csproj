@@ -44,14 +44,14 @@
     <Reference Include="Newtonsoft.Json"><!-- 13.0.4 -->
       <HintPath>lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
-
     <Reference Include="Oracle.ManagedDataAccess"><!-- 18.15.1 -->
       <HintPath>lib\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
-
-
     <Reference Include="Mono.Security"><!-- 5.4.0.201 -->
       <HintPath>lib\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp"><!-- 4.7.0 -->
+      <HintPath>lib\Microsoft.CSharp.dll</HintPath>
     </Reference>
 
     <!-- =================== -->
