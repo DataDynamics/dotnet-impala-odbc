@@ -136,3 +136,7 @@
 
 </Project>
 ```
+
+## 참고
+
+* 패키지 설치 경로 확인 : `dotnet nuget locals global-packages -l`
